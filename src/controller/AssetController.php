@@ -14,6 +14,8 @@ class AssetController
         $basePath = $renderer->getBasePath();
 
         $filename = $basePath . '/' . $path;
+        
+        $filename = str_replace('.statics', '', $filename);
 
         $ext = strtolower(Arr::last(explode('.', $filename)));
 
