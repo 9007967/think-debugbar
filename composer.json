@@ -19,7 +19,10 @@
         "think": {
             "services": [
                 "think\\debugbar\\Service"
-            ]
+            ],
+            "config":{
+                "debugbar": "src/config.php"
+            }       
         }
     },
     "autoload": {
